@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/nfc_title"
+        layout="@layout/title" />
+
+    <!--
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/btn_right"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_rectangle"
+            android:text="@string/btn_copy"
+            android:textColor="@color/text_button"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnNfc"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/btn_right"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_rectangle"
+            android:text="@string/btn_nfc"
+            android:textColor="@color/text_button"
+            android:textStyle="bold" />
+    </LinearLayout>
+    -->
+
+    <TextView
+        android:id="@+id/tv_light_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/action_light_sensor_value"
+        android:textSize="25dp" />
+ <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imv_click_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/background_click_me" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radio_barcode_work_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_single"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_checkbox_menus"
+                android:gravity="center_horizontal"
+                android:text="@string/barcode_work_type_single" />
+
+            <RadioButton
+                android:id="@+id/radio_repeat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/mm_trans"
+                android:gravity="center_horizontal"
+                android:text="@string/barcode_work_type_repeat" />
+
+            <RadioButton
+                android:id="@+id/radio_tired"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/mm_trans"
+                android:gravity="center_horizontal"
+                android:text="@string/barcode_work_type_tierd" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkbox_vibration"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vibration"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_sound"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sound"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tv_show"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:scrollbars="none" >
+          <requestFocus/>
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2" >
+
+        <LinearLayout
+            android:id="@+id/botom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bv_set"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_rectangle"
+                android:text="@string/barcode_set" />
+
+            <Button
+                android:id="@+id/bv_clear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_rectangle"
+                android:text="@string/barcode_clear" />
+
+            <Button
+                android:id="@+id/bv_scan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_rectangle"
+                android:text="@string/barcode_scan"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

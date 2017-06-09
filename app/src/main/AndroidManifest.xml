@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.speedata.kt40helper_"
+    android:versionCode="1"
+    android:versionName="1.1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.brx.appcation.CustomerApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="PlCZGAjoodOdyiiNdULBmuai" />
+
+        <activity
+            android:name="com.speedata.kt40helper.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.NormalTestActivity"
+            android:label="@string/action_home_nornal_test"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.psam3310.Psam3310TestActivity"
+            android:label="@string/action_nornal_psam_test"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.DisplayTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.CameraTest"
+            android:label="@string/action_home_nornal_test"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.SdcardTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.SimTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.UsbTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.BarcodeTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.GPSTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.KeyTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.WifiTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.AboutUs"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.AudioFxActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.RecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.TestMicActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.BluetoothTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.LightSenSorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.FalshLightTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sinpo.xnfc.NFCard"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/nfcard"
+            android:windowSoftInputMode="adjustUnspecified|stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.speedata.kt40helper.PsamTestActivity"
+            android:label="@string/title_activity_psam_test"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

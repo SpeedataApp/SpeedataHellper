@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_default" >
+
+    <include
+        android:id="@+id/nfc_title"
+        layout="@layout/title" />
+
+    <TextView
+        android:id="@+id/tv_wifi_state"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/toolbar"
+        android:layout_below="@+id/nfc_title"
+        android:layout_margin="@dimen/pnl_margin"
+        android:background="@drawable/container"
+        android:fillViewport="true" />
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/toolbar"
+        android:layout_below="@+id/nfc_title"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/btn_right"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_rectangle"
+            android:text="@string/btn_open"
+            android:textColor="@color/text_button"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSet"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/btn_right"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_rectangle"
+            android:text="@string/btn_nfc"
+            android:textColor="@color/text_button"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/single0" />
+
+</RelativeLayout>

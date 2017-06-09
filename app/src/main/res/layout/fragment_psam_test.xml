@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.speedata.kt40helper_.PsamTestActivity$PlaceholderFragment" >
+
+    <include
+        android:id="@+id/lay_title"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_psam_return"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_psam_send"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/btn_send_adpu_cmd"
+            android:background="@drawable/bg_button_rectangle"
+            android:layout_weight="4" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KT40Assistant</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="home_title">KT40Assistant</string>
+    <string name="action_settings">Settings</string>
+    <!-- exit -->
+    <string name="action_exit_title">Exit</string>
+    <string name="action_exit_content">Do you really want to exit</string>
+    <string name="action_exit_sure">Sure</string>
+    <string name="action_exit_cancel">Cancel</string>
+    <string name="action_dialog_setting_config">Please check the "Enable Keyreport Scan" and "
+        Enable Keyreport Scan with warning tone" of Accessibility</string>
+    <string name="action_dialog_setting_config_sure_go">Go to set</string>
+
+    <!-- home action -->
+    <string name="action_home_nornal_test">Routine Test</string>
+    <string name="action_home_wifi">WIFI Test</string>
+    <string name="action_home_bluetooth">Bluetooth Test</string>
+    <string name="action_home_scan">Scan Test</string>
+    <string name="action_home_gps">GPS Test</string>
+    <string name="action_home_nfc">NFC Test</string>
+    <string name="action_home_voice_set">Voice Set</string>
+    <string name="action_home_bright_set">Brightness Set</string>
+
+    <!-- set -->
+    <string name="set_speaker">The receiver volume</string>
+    <string name="set_music">Speaker volume</string>
+    <string name="set_song">Music volume</string>
+    <string name="set_bright">The screen brightness</string>
+
+    <!-- normal -->
+    <string name="action_nornal_display">Display Test</string>
+    <string name="action_nornal_key">KeyButton Test </string>
+    <string name="action_nornal_sound">Sound Test</string>
+    <string name="action_nornal_camera">Camera Test</string>
+    <string name="action_camera_flashlight">Flash/Flashlight Test</string>
+    <string name="action_nornal_charge">USB Test</string>
+    <string name="action_nornal_sd">Memory</string>
+    <string name="action_nornal_sim">SIM Card Test</string>
+    <string name="action_nornal_headset">Headset</string>
+    <string name="action_nornal_light_sensor_test">LightSensor Test</string>
+    <string name="action_light_sensor_value">LightSensor：</string>
+    <string name="action_version_kernal">Kernal Version：</string>
+    <string name="action_version_sdk">SDK Version：</string>
+    <string name="action_version_system">System Version：</string>
+    <!-- usb -->
+    <string name="usb_state_connect">USB Connected</string>
+    <string name="usb_state_no_connect">USB DisConnected</string>
+    <!-- keytest -->
+    <string name="key_test_back_title">Remind</string>
+    <string name="key_test_back_content">Whether to return</string>
+    <string name="key_test_back_sure">Sure</string>
+    <string name="key_test_back_cancel">Cancel</string>
+    <!--  -->
+    <string name="in_sound">Earphone</string>
+    <string name="sdcard">Memory</string>
+    <string name="headset">耳机</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="total_size">Internal storage capacity：</string>
+    <string name="avl_size">The residual capacity of internal storage:</string>
+    <string name="out_total_size">SD card total capacity：</string>
+    <string name="out_avl_size">Memory</string>
+    <string name="no_sdcard">There is no insert SD card</string>
+    <string name="plus_headset">Before you click the button, please insert earphone</string>
+    <string name="camera_text">Click on the camera button after entering photos will return images displayed in the screen!If into the camera shows that there is something wrong with the camera</string>
+    <string name="key_search">Home Button</string>
+    <string name="switch_cam">Switch camera</string>
+    <string name="camera_enter">Taking pictures</string>
+    <string name="camera_flash">The flashlight</string>
+    <string name="camera_flash_close">Close the flashlight</string>
+    <string name="failed">Failure</string>
+    <string name="successed">Success</string>
+    <string name="imei">IMEI:</string>
+    <string name="networktype">Network type:</string>
+    <string name="phonetype">Mobile phone type:</string>
+    <string name="simoper">Operator:</string>
+    <string name="display">Display</string>
+    <string name="lcdtesttip">Please confirm whether there is a LCD pixels</string>
+
+    <!-- barcode -->
+    <string name="barcode_work_type_single">Single Scan</string>
+    <string name="barcode_work_type_repeat">Multiple Scan</string>
+    <string name="barcode_work_type_tierd">Fatigue Test</string>
+    <string name="barcode_scan">Scan</string>
+    <string name="barcode_scan_stop">Stop</string>
+    <string name="barcode_set">Set</string>
+    <string name="barcode_clear">Clean</string>
+    <!-- 播放音乐 -->
+    <string name="sound_music_play">Play Music</string>
+    <string name="sound_play">Play the recording</string>
+    <string name="sound_play_stop">Stop</string>
+    <string name="sound_start_record">Start Recording</string>
+    <string name="sound_stop_record">Stop</string>
+
+    <!-- 回环测试 -->
+    <string name="testMic">Microphone test</string>
+    <string name="test_mic_string">Testing now&#8230;</string>
+    <string name="action_test_mic">Loopback Test</string>
+
+    <!-- gps -->
+    <string name="gps_work_type">Android SDK</string>
+    <string name="gps_wifi_work_type">BaiDu SDK</string>
+    <string name="gps_start">To Locate</string>
+    <string name="gps_stop">Stop</string>
+
+    <!-- gps -->
+    <string name="dialog_title_remind">Remind</string>
+    <string name="dialog_open_gps">To detect the GPS did not open, go to Settings?</string>
+    <string name="ok">Set</string>
+    <string name="sure">Sure</string>
+    <string name="back">Exit</string>
+    <string name="baidu_wifi_result">Network Location</string>
+    <string name="baidu_gps_result">GPS Location</string>
+    <string name="remind_gps_content">Through the interface to get the GPS system at android, need to outdoor empty place to locate</string>
+    <string name="remind_baidu">Call baidu SDK, through the network and positioning of GPS positioning</string>
+    <string name="remind_baidu_no_wifi">Detect currently there is no network, please go to the outdoor positioning empty place</string>
+
+    <!-- wifi -->
+    <string name="dialog_no_wifi">Currently there is no connection to the wifi</string>
+    <string name="wifi_state_perfect">signal strength: perfect</string>
+    <string name="wifi_state_better">signal strength:better</string>
+    <string name="wifi_state_normal">signal strength:normal</string>
+    <string name="wifi_state_bad">signal strength:bad</string>
+    <string name="wifi_state_no_single">No singal</string>
+    <string name="wifi_not_connect">No network，please connect wifi</string>
+    <string name="btn_open">OpenExplorer</string>
+
+    <!-- bluetooth -->
+    <string name="bluetooth_state_noopen">Bluetooth is not open</string>
+    <string name="bluetooth_state_opening">Are open bluetooth...</string>
+    <string name="bluetooth_state_open_finish">Bluetooth has been opened</string>
+    <string name="bluetooth_connect_success">The connection is successful</string>
+    <string name="bluetooth_state_connecting">Connectioning</string>
+    <string name="bluetooth_connect_failed">The connection fails</string>
+    <string name="bluetooth_self_name">This machine </string>
+    <string name="bluetooth_state_pair">paired</string>
+    <string name="bluetooth_state_no_pair">unpaired</string>
+    <string name="bluetooth_state_pairing">In the match</string>
+    <string name="bluetooth_left_scan_time">Left scan time</string>
+    <string name="bluetooth_device_cannot_see">Equipment is invisible</string>
+    <string name="bluetooth_left_see_time">Left can see time</string>
+    <string name="bluetooth_scan">Scan</string>
+    <string name="bluetooth_scan_stop">Stop Scan</string>
+
+    <!-- color -->
+  
+
+    <!-- nfc -->
+    <string name="menu_clear">Clear</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_about">About</string>
+    <string name="btn_copy">Copy</string>
+    <string name="btn_nfc">Setting</string>
+    <string name="btn_exit">Exit</string>
+    <string name="tip_nfc_notfound">no nfc hardware!</string>
+    <string name="tip_nfc_disabled">nfc disabled</string>
+    <string name="tip_nfc_enabled">nfc enabled</string>
+    <string name="msg_reading">Reading Card...</string>
+    <string name="msg_nonfc">No NFC hardware found, Program will NOT work.</string>
+    <string name="msg_nfcdisabled">NFC hardware has been disabled, Please enable it first. (using the \'Setting\' button to turn it on or off)</string>
+    <string name="msg_nocard">No Card been read, Please take the card near to the back cover of phone and try again</string>
+    <string name="msg_copied">Card information has been copied to clipboard</string>
+    <string name="lab_id">ID:</string>
+    <string name="lab_pmm">PMm:</string>
+    <string name="lab_serl">SEL:</string>
+    <string name="lab_ver">VER:</string>
+    <string name="lab_date">DAT:</string>
+    <string name="lab_op">USE:</string>
+    <string name="lab_log">Log:</string>
+    <string name="lab_balance">Balance:</string>
+    <string name="lab_cur_cny">CNY</string>
+    <string name="lab_cur_hkd">HKD</string>
+    <string name="lab_op_time">Time(s)</string>
+    <string name="lab_user_id">Card SN:</string>
+    <string name="lab_bktg_sn">Book ID:</string>
+    <string name="lab_bkcat">Category:</string>
+    <string name="name_bkcat_soc">Natural sciences</string>
+    <string name="name_bkcat_sci">Social sciences</string>
+    <string name="name_bkcat_ltr">Literature</string>
+    <string name="name_octopuscard">Octopus Card (Hong Kong)</string>
+    <string name="name_szt">Shenzhen Tong</string>
+    <string name="name_szt_f">Shenzhen Tong (Old version)</string>
+    <string name="name_lnt">Yangcheng Tong</string>
+    <string name="name_wht">Wuhan City Smart Card</string>
+    <string name="name_cac">Changan Card</string>
+    <string name="name_bj">Beijing Municipal Card</string>
+    <string name="name_bj_m">Beijing Municipal Card (Old version)</string>
+    <string name="name_unknowntag">Unknown Tag</string>
+    <string name="name_szlib_center">Shenzhen Library (Center)</string>
+    <string name="name_szlib_nanshan">Shenzhen Library (Nanshan)</string>
+    <string name="name_lib_readercard">Reader\'s Card</string>
+    <string name="name_lib_booktag">Book\'s eTag</string>
+    <string name="info_help">
+<![CDATA[
+	<div>Make sure that the NFC sensor is enaled before read card. You can click \'setting\' button to open system configure dialog to confirm.</div>
+	<div>When reading card, please take your card close to NFC sensor of phone (normally, it is at back cover of the phone) and hold a few seconds so that program can read data out.</div><p />
+	<div>phone\'s NFC hardware and os performance is not as good as expect currently, so it may need repeatedly read for whese kind of cards. (In case of always fail, You can try to disable NFC sensor and then re-enable it.)</div><p />
+	<div>So far we\'ve confirmed the following can be read: ShenzhenTong Card (newer version) of Shenzhen, Octopus Card of Hongkong, Reader Card of Shenzhen Library, Beijing Municipal Card (newer version), Changan Card of Shaanxi,Xi\'an, Wuhan City Smart Card. 
+	</div>
+	]]>
+    </string>
+    <string name="info_about">
+<![CDATA[
+	
+	<div>NFCard can read contactless IC card use NFC sensor.</div>
+	<div>Support a range of iso7816-3 / iso15693 / felicia compliant e-wallet / RFID cards, and can be extended to support many specific data protocol, e.g. pboc2.0 of china.</div>
+	<div>NFCard can read information like balance of account, transaction log, etc. from these cards </div><p />
+	]]>
+    </string>
+    <string name="about_title">About Speedata</string>
+    <string name="about_slpash">To accelerate your mobile business processes</string>
+    <string name="about_speedata">
+<![CDATA[
+      <div> Beijing think billiton technology co., LTD. (hereinafter referred to as: Speedata), is a leading domestic portable intelligent terminal equipment manufacturers.Has a profound custom technology background intelligent terminal product research and development and function.Focus on the transition of the technology of Internet of things industry, and provide good service.In "the handheld mobile intelligent terminal", "Internet of things" and "PDA" industry in areas such as lead, is committed to a no.1 brand creation networking PDA: its content.</div><p />
+       <div>Its main development and production of commercial and industrial use with functions of data acquisition of wireless intelligent terminal, and is committed to in the field of Internet and mobile e-commerce to create greater value.</div><p />
+     <div>   The intelligent terminal products using open platform flexible configuration: currently using various mainstream WindowsMobile, WinCE operating system, Android;One dimensional code, the qr code, RFID, GPS, WLAN function module free choice;Circuit provide customization, customization service, the implementation of the business logic for the customer to provide the best carrier.</div><p />
+    <div>   At the beginning of the company is committed to supply information system from all walks of life with advanced data acquisition, maintain and update the technical solutions.After a long experience, the company has built a comprehensive technology, service, professional work team, has accumulated rich experience in industry application.Whether you need the GPS technology, automatic identification technology or mobile terminal equipment, our high technology integration ability and professional service will no doubt provide the most suitable solution for you.</div><p />
+    <div>   Win-win cooperation is our pursuing goal.With the industry advanced system integrators to establish a close partnership, for clients to build a set of perfect from the front to the background information management system.Successful explored a set of tripartite cooperation and win-win development pattern.Successively for logistics, retail, member management, surveying and mapping, agriculture, electric power, water conservancy, communications, and many other industries to provide advanced, perfect solution.</div>
+]]>
+    </string>
+    <!-- <div><img src="icon_main,16,16" /><big>&nbsp;NFCard&nbsp;</big><version>v</version></div><p /> -->
+    <string name="remind_setting">Is set</string>
+    <string name="action_nornal_psam_test">PsamTest</string>
+    <string name="title_activity_psam_test">PsamTest</string>
+    <string name="btn_send_adpu_cmd">SendAdpuCmd</string>
+    <string name="vibration">Vibration</string>
+    <string name="sound">Sound</string>
+    
+    
+    
+    <!--3310psam -->
+    <string name="hint_input_cmd">please input apdu cmd</string>
+    <string name="btn_send">SEDN APDU</string>
+    <string name="btn_enable_card">PowerOn</string>
+    <string name="btn_send_random">Random</string>
+    <string name="btn_send_clear">Clear</string>
+    <string name="text_send_pck">send package-></string>
+    <string name="text_rece_pck">receive package-></string>
+    <string name="text_parse_data">parse data-></string>
+
+</resources>
