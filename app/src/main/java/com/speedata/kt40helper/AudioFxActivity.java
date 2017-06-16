@@ -1,7 +1,5 @@
 package com.speedata.kt40helper;
 
-import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -9,21 +7,18 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.media.MediaPlayer.OnCompletionListener;
 import android.media.audiofx.Equalizer;
 import android.media.audiofx.Visualizer;
-import android.media.audiofx.Visualizer.OnDataCaptureListener;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.SeekBar.OnSeekBarChangeListener;
+
 import com.speedata.kt40helper_.R;
 
 public class AudioFxActivity extends MyActivity {
@@ -78,14 +73,14 @@ public class AudioFxActivity extends MyActivity {
 						getWindow().clearFlags(
 								WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 						setVolumeControlStream(AudioManager.STREAM_SYSTEM);
-						mStatusTextView.setText("“Ù¿÷≤•∑≈ÕÍ±œ");
+						mStatusTextView.setText("Èü≥‰πêÊí≠ÊîæÂÆåÊØï");
 					}
 				});
 
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		setVolumeControlStream(AudioManager.STREAM_MUSIC);
 		mMediaPlayer.start();
-		mStatusTextView.setText("≤•∑≈“Ù¿÷÷–....");
+		mStatusTextView.setText("Êí≠ÊîæÈü≥‰πê‰∏≠....");
 	}
 
 	private void setupEqualizerFxAndUI() {
@@ -96,7 +91,7 @@ public class AudioFxActivity extends MyActivity {
 		mEqualizer.setEnabled(true);
 
 //		TextView eqTextView = new TextView(this);
-//		eqTextView.setText("æ˘∫‚∆˜:");
+//		eqTextView.setText("ÂùáË°°Âô®:");
 //		mLinearLayout.addView(eqTextView);
 
 		short bands = mEqualizer.getNumberOfBands();
@@ -142,7 +137,7 @@ public class AudioFxActivity extends MyActivity {
 
 			bar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 				public void onProgressChanged(SeekBar seekBar, int progress,
-						boolean fromUser) {
+											  boolean fromUser) {
 					mEqualizer.setBandLevel(band,
 							(short) (progress + minEQLevel));
 				}
@@ -196,12 +191,12 @@ public class AudioFxActivity extends MyActivity {
 		mVisualizer.setDataCaptureListener(
 				new Visualizer.OnDataCaptureListener() {
 					public void onWaveFormDataCapture(Visualizer visualizer,
-							byte[] bytes, int samplingRate) {
+													  byte[] bytes, int samplingRate) {
 						mVisualizerView.updateVisualizer(bytes);
 					}
 
 					public void onFftDataCapture(Visualizer visualizer,
-							byte[] fft, int samplingRate) {
+												 byte[] fft, int samplingRate) {
 						mVisualizerView.updateVisualizer(fft);
 					}
 				}, maxCR / 2, false, true);
@@ -279,7 +274,7 @@ public class AudioFxActivity extends MyActivity {
 
 			mRect.set(0, 0, getWidth(), getHeight());
 
-			// ªÊ÷∆≤®–Œ
+			// ÁªòÂà∂Ê≥¢ÂΩ¢
 			// for (int i = 0; i < mBytes.length - 1; i++) {
 			// mPoints[i * 4] = mRect.width() * i / (mBytes.length - 1);
 			// mPoints[i * 4 + 1] = mRect.height() / 2
@@ -290,7 +285,7 @@ public class AudioFxActivity extends MyActivity {
 			// + ((byte) (mBytes[i + 1] + 128)) * (mRect.height() / 2) / 128;
 			// }
 
-			// ªÊ÷∆∆µ∆◊
+			// ÁªòÂà∂È¢ëË∞±
 			final int baseX = mRect.width() / mSpectrumNum;
 			final int height = mRect.height();
 

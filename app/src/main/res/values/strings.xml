@@ -127,6 +127,8 @@
     <string name="wifi_not_connect">No network，please connect wifi</string>
     <string name="btn_open">OpenExplorer</string>
 
+    <string name="action_system_version">System version</string>
+    <string name="dialog_must_stop_first">Stop the current location</string>
     <!-- bluetooth -->
     <string name="bluetooth_state_noopen">Bluetooth is not open</string>
     <string name="bluetooth_state_opening">Are open bluetooth...</string>
@@ -239,5 +241,8 @@
     <string name="text_send_pck">send package-></string>
     <string name="text_rece_pck">receive package-></string>
     <string name="text_parse_data">parse data-></string>
+
+
+    <string name="tv_scanEnable">Enable scan function!!!</string>
 
 </resources>

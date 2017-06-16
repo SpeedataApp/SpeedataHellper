@@ -9,6 +9,10 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         layout="@layout/title" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_msg"/>
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -30,6 +34,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:visibility="gone"
                 android:background="@drawable/bg_checkbox_menus"
                 android:gravity="center_horizontal"
                 android:text="@string/barcode_work_type_single" />
@@ -39,6 +44,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:visibility="gone"
                 android:background="@drawable/mm_trans"
                 android:gravity="center_horizontal"
                 android:text="@string/barcode_work_type_repeat" />
@@ -48,6 +54,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:visibility="gone"
                 android:background="@drawable/mm_trans"
                 android:gravity="center_horizontal"
                 android:text="@string/barcode_work_type_tierd" />
@@ -65,6 +72,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/vibration"
+            android:visibility="gone"
             android:layout_weight="1"/>
 
         <CheckBox
@@ -72,6 +80,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/sound"
+            android:visibility="gone"
             android:layout_weight="1"/>
     </LinearLayout>
 
@@ -109,6 +118,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
+                android:visibility="gone"
                 android:background="@drawable/bg_button_rectangle"
                 android:text="@string/barcode_set" />
 
@@ -129,6 +139,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/bg_button_rectangle"
                 android:text="@string/barcode_scan"
+                android:visibility="gone"
                 android:textColor="@color/red" />
         </LinearLayout>
     </RelativeLayout>

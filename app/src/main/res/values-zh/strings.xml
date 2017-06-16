@@ -127,6 +127,8 @@
     <string name="wifi_state_normal">信号强度：信号一般</string>
     <string name="wifi_state_bad">信号强度：信号较差</string>
     <string name="btn_open">打开浏览器</string>
+    <string name="wifi_state_no_single">无信号</string>
+    <string name="wifi_not_connect">没有网络,请连接无线网络</string>
 
     <!-- bluetooth -->
     <string name="bluetooth_state_noopen">蓝牙未打开</string>
@@ -235,5 +237,9 @@
     <string name="text_send_pck">发送数据包</string>
     <string name="text_rece_pck">接受数据包</string>
     <string name="text_parse_data">解析数据</string>
+
+
+
+    <string name="tv_scanEnable">请设置扫描快捷使能!!!</string>
 
 </resources>

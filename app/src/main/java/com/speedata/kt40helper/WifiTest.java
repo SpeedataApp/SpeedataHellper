@@ -1,9 +1,5 @@
 package com.speedata.kt40helper;
 
-import java.io.IOException;
-import java.util.Timer;
-import java.util.TimerTask;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -24,6 +20,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.speedata.kt40helper_.R;
+
+import java.io.IOException;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class WifiTest extends MyActivity implements OnClickListener {
 
@@ -68,7 +68,7 @@ public class WifiTest extends MyActivity implements OnClickListener {
 		// mWebView = (WebView) findViewById(R.id.web);
 		tvWifiState = (TextView) findViewById(R.id.tv_wifi_state);
 		// mWebView.setVisibility(View.GONE);
-		wifi_service = (WifiManager) getSystemService(WIFI_SERVICE);
+		wifi_service = (WifiManager)mContext.getSystemService(WIFI_SERVICE);
 		wifiInfo = wifi_service.getConnectionInfo();
 		judgeWifi();
 		timer = new Timer();

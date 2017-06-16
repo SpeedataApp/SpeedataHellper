@@ -52,6 +52,7 @@ public class BarcodeTest extends MyActivity implements OnClickListener {
 
     boolean stop = false;
     Context mContext;
+    private TextView tv_msg;
 
     // // 4500
     // private BarCodeReader bcr = null;
@@ -89,11 +90,20 @@ public class BarcodeTest extends MyActivity implements OnClickListener {
         vibrator = (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
         soundPool = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         soundId = soundPool.load("/system/media/audio/ui/VideoRecord.ogg", 0);
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         //判断扫描快捷是否勾选
         String result = SystemProperties.get("persist.sys.keyreport", "true");
         if (result.equals("false")) {
             keyreport = true;
-            android.os.SystemProperties.set("persist.sys.keyreport", "true");
+            tv_msg.setText(getString(R.string.tv_scanEnable));
+//            android.os.SystemProperties.set("persist.sys.keyreport", "true");
+        }else {
+            tv_msg.setText("");
         }
     }
 
@@ -102,6 +112,9 @@ public class BarcodeTest extends MyActivity implements OnClickListener {
     private void initUI() {
         // requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_barcode_test);
+
+        tv_msg = (TextView) findViewById(R.id.tv_msg);
+
         // bvAbletAll = (Button) findViewById(R.id.bv_enable_all);
         // bvDisableAll = (Button) findViewById(R.id.bv_disable_all);
         bvSet = (Button) findViewById(R.id.bv_set);
@@ -223,18 +236,22 @@ public class BarcodeTest extends MyActivity implements OnClickListener {
     @Override
     protected void onDestroy() {
         unregisterReceiver(receiver);
-        cancelRepeat();
+//        cancelRepeat();
         vibrator.cancel();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                stopScanService();
-            }
-        }).start();
-        if (keyreport) {
-            android.os.SystemProperties.set("persist.sys.keyreport", "false");
-        }
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                if (!keyreport){
+//                    stopScanService();
+//                }
+//            }
+//        }).start();
+//        if (keyreport) {
+//            android.os.SystemProperties.set("persist.sys.keyreport", "false");
+//        }
         super.onDestroy();
+
+
     }
 
     private boolean isRepeat = false;
@@ -247,14 +264,16 @@ public class BarcodeTest extends MyActivity implements OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bv_scan:
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (SystemProperties.get("persist.sys.scanheadtype").equals("6603")) {
-                            startScanService();
-                        }
-                    }
-                }).start();
+//                new Thread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        if (keyreport){
+//                            if (SystemProperties.get("persist.sys.scanheadtype").equals("6603")) {
+//                                startScanService();
+//                            }
+//                        }
+//                    }
+//                }).start();
                 if (typeSingle.isChecked()) {
                     startScan();
                 } else if (typeRepeat.isChecked() || typeTired.isChecked()) {
